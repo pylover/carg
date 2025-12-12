@@ -71,8 +71,7 @@ struct yacap_command;
 /* callbacks */
 typedef int (*yacap_commandhook_t) (struct yacap_command *cmd);
 typedef enum yacap_eatstatus (*yacap_eater_t) (
-        const struct yacap_option *option, const char *value,
-        void *userptr);
+        const struct yacap_option *option, const char *value, void *userptr);
 typedef int (*yacap_entrypoint_t) (const struct yacap *c,
         const struct yacap_command *cmd);
 
